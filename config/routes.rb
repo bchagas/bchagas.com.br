@@ -17,6 +17,9 @@ Themis::Application.routes.draw do
       end
     end
   end
+
+  get "page/:id" => "application#index", :as => :page
+
   match 'sitemap.:format', :to => 'application#sitemap', :as => 'sitemap'
   match 'tags/:tag', :to => 'posts#by_tag', :as => 'tags'
   match 'posts.:format', :to => 'posts#all'

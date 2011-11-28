@@ -8,4 +8,13 @@ class ApplicationController < ActionController::Base
   def sitemap
     @posts = Post.all
   end
+
+  def index
+    if params[:id]
+      render params[:id]
+    else
+      redirect_to '/404.html', :status => 404
+    end
+  end
+  
 end
