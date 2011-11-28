@@ -4,7 +4,9 @@
   %meta{ :name => "keywords", :content => keywords }
   %meta{ :name => "description", :content => configuration['description'] }
   %link{ :rel => "alternate", :type => "application/rss+xml", :title => rss_title, :href => rss_link}
+
   %title= "#{configuration['name']} - #{title}"
+  %link{ :href => 'http://fonts.googleapis.com/css?family=Signika+Negative:600,300,400', :rel => 'stylesheet', :type => 'text/css' }
   =raw stylesheet_link_merged 'screen', :media => 'screen'
 
 - content_for :header do
