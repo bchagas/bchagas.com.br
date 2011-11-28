@@ -1,8 +1,10 @@
 (function(){
 
-  date = $('time').html(), elem = date.split('/'), day = elem[0], month = elem[1], year = elem[2];
   if($('time').length >= 1) {
-    $('time').html('<span>' + day + '</span>' + '<span>' + month + '</span>' + '<span>' + year + '</span>');
-  }
+    date = $('time').html(), elem = date.split('/'), day = '<span>' + elem[0] + '</span>', month = '<span>' + elem[1] + '</span>', year = '<span>' + elem[1] + '</span>';
+
+    $('header time').html(day + month + year);
+    $('aside time').html(day + month);
+  };
 
 }).call(this);
