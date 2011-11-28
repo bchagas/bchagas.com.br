@@ -1,4 +1,4 @@
-name: "Bruno CHagas"
+name: "Bruno Chagas"
 description: "Front-end Engineer"
 about: ""
 
@@ -7,10 +7,10 @@ hoptoad: "YOUR KEY HERE"
 host: "http://bchagas.com.br"
 
 google_analytics:
-  tracker_id: 'UA-1984444-24'
+  tracker_id: 'Tracker'
 
 get_clicky:
-  tracker_id: '00112233'
+  tracker_id: 'Tracker'
 
 disqus:
   account: 'bchagas'
