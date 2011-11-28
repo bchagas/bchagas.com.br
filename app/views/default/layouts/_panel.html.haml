@@ -1,0 +1,18 @@
+= yield
+
+- content_for :head do
+  %meta{ :name => "keywords", :content => keywords }
+  %meta{ :name => "description", :content => configuration['description'] }
+  %link{ :rel => "alternate", :type => "application/rss+xml", :title => rss_title, :href => rss_link}
+  %title= "#{configuration['name']} - #{title}"
+  = raw stylesheet_link_merged 'panel', :media => 'screen'
+
+- content_for :header do
+  %h1= link_to configuration['name'], root_path
+  %nav
+    %ul
+      %li= link_to t("panel.navigation.new_post"), new_panel_post_path, :class => "new-post"
+      %li= link_to t("panel.navigation.sign_out"), destroy_user_session_path
+
+- content_for :sidebar do
+  = raw "&nbsp;"

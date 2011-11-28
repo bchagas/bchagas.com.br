@@ -1,0 +1,20 @@
+pt-BR:
+  administration: Administration
+  activerecord:
+    attributes:
+      user:
+        approver: Approver?
+  destroy: Destroy
+  edit: Edit
+  formtastic:
+    actions:
+      sign_in: "Sign in"
+  new: New
+  panel:
+    navigation:
+      new_post: New post
+      sign_out: Logout
+  search: Search
+  time:
+    formats:
+      header: "%d/%m/%Y"

@@ -1,0 +1,23 @@
+= render :layout => "layouts/public", :locals => { :title => (defined?(title) ? title : configuration['description']) } do
+  - if defined?(title)
+    %h1= title
+
+  %ul#posts.posts
+    - posts.each do |post|
+      %li.post
+        %h2= link_to post.title, post_path(post)
+        = render 'shared/header_post', :post => post
+        %article
+          = raw post.body.to_html
+        .comments
+          %h6 Comentários
+          = link_to("Add comment", post_path(post, :anchor => "disqus_thread"))
+          = raw disqus_comment_counts
+        .tags
+          %h6 Tags
+          %ul
+            - post.tags.map do |tag|
+              %li= link_to tag.name, tags_path(tag.name)
+
+  .paginate
+    = will_paginate posts

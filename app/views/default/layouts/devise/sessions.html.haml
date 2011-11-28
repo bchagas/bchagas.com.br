@@ -1,0 +1,18 @@
+!!! 5
+%html
+  %head
+    %title= configuration['name']
+    =raw stylesheet_link_merged 'user', :media => 'screen, projection'
+    /[if lt IE 8]
+      = stylesheet_link_tag 'ie', :media => 'screen, projection'
+    = csrf_meta_tag
+  %body
+    #container
+      %header
+        %h1= link_to configuration['name'], root_path
+      %section#content
+        - unless flash[:alert].nil?
+          .message= flash[:alert]
+        = yield
+    %script{ :type => "text/javascript", :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" }
+    %script{ :type => "text/javascript", :src => "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js" }

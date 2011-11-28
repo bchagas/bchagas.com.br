@@ -1,0 +1,16 @@
+name: "Bruno CHagas"
+description: "Front-end Engineer"
+about: ""
+
+hoptoad: "YOUR KEY HERE"
+
+host: "http://bchagas.com.br"
+
+google_analytics:
+  tracker_id: 'UA-1984444-24'
+
+get_clicky:
+  tracker_id: '00112233'
+
+disqus:
+  account: 'bchagas'

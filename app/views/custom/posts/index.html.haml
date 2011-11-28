@@ -1,0 +1,5 @@
+= render :layout => "layouts/public", :locals => { :title => (defined?(title) ? title : configuration['description']) } do
+  %ol#posts
+    - @posts.each do |post|
+      %li.post{:id =>  "article-#{post.id}"}
+        %h2.title= link_to post.title, post_path(post) + "#article-#{post.id}"

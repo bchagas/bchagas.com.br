@@ -1,0 +1,8 @@
+= render :layout => "layouts/panel", :locals => {:title => @post.title, :description => @post.title } do
+  %article{:id => "article-#{@post.id}", :class => "post", :role => "main"}
+    %header
+      %time{:datetime => @post.created_at }= I18n.l @post.created_at, :format => :header
+      %h1.title= @post.title
+    = raw @post.body.to_html
+  - content_for :sidebar do
+    = render 'posts'

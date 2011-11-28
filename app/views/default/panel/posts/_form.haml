@@ -1,0 +1,16 @@
+- content_for :js do
+  = raw javascript_include_merged :panel
+
+- content_for :head do
+  = raw stylesheet_link_merged :panel
+
+= semantic_form_for [:panel, @post] do |form|
+  = form.inputs do
+    = form.input :title
+    = form.input :body
+    = form.input :description
+    = form.input :tag_list, :as => :string
+  = form.buttons
+
+- content_for :sidebar do
+  = render 'posts'

@@ -1,0 +1,7 @@
+= render :layout => "layouts/panel", :locals => { :title => (defined?(title) ? title : configuration['description']) } do
+  %h2 Editing post
+
+  = render 'form'
+  - unless @post.published?
+    = link_to "Publish", publish_panel_post_path(@post), :method => :put, :class => "button"
+

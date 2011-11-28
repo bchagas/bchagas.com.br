@@ -1,0 +1,12 @@
+!!! XML
+%urlset{"xmlns:xsi" => "http://www.w3.org/2001/XMLSchema-instance", "xsi:schemaLocation" => "http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd", :xmlns => "http://www.sitemaps.org/schemas/sitemap/0.9"}
+  %url
+    %loc= root_url
+    %lastmod= Post.published.first.updated_at.strftime("%Y-%m-%d")
+    %priority="1.0"
+
+  - @posts.each do |post|
+    %url
+      %loc= post_url(post)
+      %lastmod= post.updated_at.strftime("%Y-%m-%d")
+      %priority="0.5"

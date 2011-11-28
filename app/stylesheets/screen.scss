@@ -1,0 +1,195 @@
+@import "compass/css3";
+@import "default";
+$blue: #29657A;
+$pink: #b23755;
+
+body {
+  background: image-url("noise.png") #eeeeee;
+  & > div{
+    @include container;
+    & > header, & > footer {
+      @include column($blueprint-grid-columns, true);
+    }
+
+    & > header {
+      padding: 50px 0 20px 0;
+      border-bottom: 1px dashed #999;
+      nav{
+        @include column(6, true);
+        ul{
+          padding: 0;
+          list-style: none;
+          @include clearfix;
+          li{
+            float: right;
+            width: 100px;
+            margin: 0;
+            text-align: center;
+            a{
+              font-size: 14px;
+              font-weight: bold;
+              text-decoration: none;
+              color: #333 !important;
+              @include transition(font-size, 0.2s, linear);
+              &:hover{
+                font-size: 20px;
+                color: #000 !important;
+              }
+              &:link{
+                color: #333 !important;
+             }
+            }
+          }
+        }
+      }
+      h1 {
+        @include column(18);
+        font: bold 60px/50px "Helvetica", "Verdana", sans-serif;
+        text-align: left;
+        text-transform: lowercase;
+        text-shadow: #FFF 1px 1px 1px;
+        a {
+          color: #000 !important;
+          text-decoration: none;
+        }
+      }
+      #about{
+        @include column(24);
+        margin: 0;
+        font: normal 30px/35px Palatino, Georgia, Times, 'Times New Roman', sans-serif;
+        text-shadow: white 2px 1px 1px;
+        color: #000;
+        a{
+          color: $pink
+        }
+      }
+    }
+    ol#posts{
+      @include column($blueprint-grid-columns, true);
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li.post{
+        padding: 20px 0;
+        border-top: 1px solid #FFF;
+        border-bottom: 1px solid #CCC;
+        font: normal 30px/50px Palatino, Georgia, Times, 'Times New Roman', sans-serif;
+        &:first-child{
+          border-top: none
+        }
+        &:last-child{
+          border-bottom: none
+        }
+        h2{
+          margin: 0;
+          a{
+            text-decoration: none;
+            text-shadow: #FFF 1px 1px 1px;
+            color: $blue;
+          }
+        }
+      }
+    }
+    aside{
+      @include column( 4, true);
+      padding: 20px 0 0 0;
+      img{
+        width: 150px;
+        @include border-radius(5px);
+        @include box-shadow(5px, 4px, 4px, #000);
+      }
+    }
+    article{
+      &.post{
+        @include column($blueprint-grid-columns - 4);
+        float: left;
+        padding: 20px 0 0 0;
+        time{
+          display: none;
+        }
+        a {
+          color: $pink !important;
+        }
+      }
+      header{
+        padding: 0 0 10px 0;
+        @include clearfix;
+        h2{
+          margin-bottom: 7px;
+          text-shadow: #FFF 1px 1px 1px;
+          text-decoration: none;
+          font: normal 55px/65px Georgia, Times, 'Times New Roman', sans-serif;
+          color: $blue;
+        }
+        time{
+          display: block;
+          border-top: 1px solid #CCC;
+          border-bottom: 1px solid #CCC;
+          text-align: center;
+          font-size: 13px;
+        }
+      }
+
+      p{
+        margin-bottom: 20px;
+        font: normal normal normal 17px/27px 'Lucida Grande', Lucida, serif;
+        color: #000;
+      }
+      h2{
+        margin-bottom: 20px;
+        margin-top: 40px;
+        text-shadow: white 1px 1px 1px;
+        text-decoration: underline;
+        font: normal 25px/22px Gergia, serif;
+        color: #778;
+      }
+
+      h3{
+        margin-bottom: 1em;
+        text-decoration: underline;
+        font-size: 20px;
+      }
+
+      h4{
+        margin: 0px 0px 14px 10px;
+        font-size: 19px;
+      }
+      ul{
+        margin: 0 0 20px 0;
+        padding: 0 0 0 10px;
+        list-style: square inside;
+        li, a{
+          font-size: 20px;
+          line-height: 26px;
+          color: #676767;
+        }
+      }
+
+      #comments{
+        border-top: 1px dashed #999;
+        #disqus_thread{
+          & *{
+            font-size: 13px;
+          }
+          margin-top: 0;
+          #dsq-content h3{
+            font-size: 25px;
+            color: $blue;
+            #dsq-num-posts{
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+
+    footer{
+      p{
+        text-align: center;
+        a{
+          color: $blue;
+        }
+      }
+    }
+  }
+}

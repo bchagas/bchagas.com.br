@@ -1,0 +1,11 @@
+#disqus_thread
+:javascript
+  var disqus_shortname = "#{configuration['disqus']['account']}";
+  var disqus_identifier = 'evinicius-#{@post.id}';
+  var disqus_url = 'http://#{request.raw_host_with_port}#{request.fullpath}';
+
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();

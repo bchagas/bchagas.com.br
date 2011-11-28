@@ -1,0 +1,86 @@
+@import "default";
+
+body{
+  background: #F7F7F7;
+  header{
+    h1{
+      display: none;
+    }
+  }
+  #container > section{
+    @include column($blueprint-grid-columns, true);
+    margin: 20% 0;
+
+    h2{
+      margin: 0 85px;
+      font-size: 18px;
+      font-style: italic;
+    }
+    div.message{
+      margin: 0px 75px;
+      padding: 5px 10px;
+      border: 1px solid red;
+      @include border-radius(3px);
+      font-size: 15px;
+      text-align: center;
+    }
+    form{
+      border: 1px solid #ccc;
+      margin: 0 auto;
+      width: 800px;
+      background: #FFF;
+      @include border-radius(10px);
+      @include clearfix;
+      fieldset{
+        width: 680px;
+        margin: 0;
+        padding: 20px 0 20px 20px;
+        float: left;
+
+        &.buttons{
+          width: auto;
+          margin: 0;
+          padding: 20px 20px 0 0;
+          float: right;
+          li{
+            width: auto;
+            padding: 25px 0 0;
+          }
+        }
+        ol{
+          @include clearfix;
+          li{
+            float: left;
+            width: 340px;
+            &.rememberme{
+              input, label{
+                display: inline;
+              }
+              input{
+                position: relative;
+                top: 1px;
+              }
+              label{
+                font-size: 15px;
+              }
+            }
+            label{
+              display: block;
+              height: 25px;
+              font: normal normal 25px/20px Geogia, Times, "Times New Roman", serif;
+            }
+            input{
+              margin: 5px 0 0;
+              font: normal normal 20px Geogia, Times, "Times New Roman", serif;
+            }
+          }
+        }
+      }
+    }
+    .links{
+      margin: 0 75px;
+      float: right;
+    }
+  }
+}
+

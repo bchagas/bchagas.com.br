@@ -1,0 +1,11 @@
+= yield
+
+- content_for :head do
+  %title= t("administration")
+
+- content_for :header do
+  %h1= link_to "#{configuration['name']} - #{t('administration')}", admin_users_path
+
+- content_for :sidebar do
+  %ul
+    %li= link_to User.model_name.human.pluralize, admin_users_path

@@ -1,0 +1,20 @@
+---
+javascripts:
+- base:
+  - jquery
+  - rails
+  - highlight.pack
+- panel:
+  - jquery.markitup.pack
+  - markitup.set
+stylesheets:
+- ie:
+  - ie
+- screen:
+  - screen
+- print:
+  - print
+- panel:
+  - panel
+  - markdown_style
+  - markitup_style

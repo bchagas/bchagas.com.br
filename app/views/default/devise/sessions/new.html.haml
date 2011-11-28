@@ -1,0 +1,12 @@
+%h2 Sign in
+= semantic_form_for resource, :as => resource_name, :url => session_path(resource_name) do |form|
+  = form.inputs do
+    = form.input :email
+    = form.input :password
+    %li.rememberme
+      = form.check_box :remember_me
+      = form.label :remember_me
+  = form.buttons do
+    = form.commit_button :sign_in
+.links= render :partial => "devise/shared/links"
+

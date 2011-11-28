@@ -1,0 +1,10 @@
+.post
+  %h2.title= @post.title
+  .author_image=raw gravatar_for @post.author
+  .author= @post.author.name
+  .date= @post.created_at
+  .body= raw @post.body.to_html
+  .tags 
+    - @post.tags.map do |tag| 
+      = link_to tag.name, tags_path(tag.name)
+  .comments= raw disqus_thread
