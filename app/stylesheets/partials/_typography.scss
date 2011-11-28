@@ -1,0 +1,45 @@
+$black: #404040;
+
+body {
+  a, p, span, strong, b, time {
+    font-family: 'Signika Negative', sans-serif;
+  }
+
+  a {
+    color: $black;
+    text-decoration: none;
+
+    &:hover {
+      color: #692849;
+    }
+  }
+ 
+  @for $i from 1 through 6 {
+    h#{$i} {
+      font-family: 'Signika Negative', sans-serif;
+      font-size: 5.8em - $i * 2;
+      font-weight: bold;
+    }
+  }
+
+  article {
+    header {
+      time {
+        font-size: 1.3em;
+        span {
+          text-align: center;
+          & + span{
+            & + span {
+            }
+          }
+        }
+      }
+    }
+  }
+
+  header {
+    h1 {
+      text-align: center;
+    }
+  }
+}
