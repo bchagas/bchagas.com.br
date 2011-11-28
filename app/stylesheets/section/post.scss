@@ -17,14 +17,12 @@ body {
       }
 
       time {
-        background: #F8F8F8;
         position: absolute; 
         width:  56px;
         right: 0;
-        top: -27px;
+        top: -28px;
         padding: 10px;
-        border-right: 1px solid #CCC;
-        @include box-shadow(#CCC -2px 0 5px inset);
+        border: 1px solid #CCC;
         
         span {
           padding: 2px;
