@@ -1,5 +1,6 @@
-require 'compass'
-rails_root = (defined?(Rails) ? Rails.root : RAILS_ROOT).to_s
-Compass.add_project_configuration(File.join(rails_root, "config", "compass.rb"))
-Compass.configure_sass_plugin!
-Compass.handle_configuration_change!
+require 'fileutils'
+FileUtils.mkdir_p(Rails.root.join("tmp", "stylesheets"))
+
+Rails.configuration.middleware.insert_before('Rack::Sendfile', 'Rack::Static',
+    :urls => ['/stylesheets'],
+    :root => "#{Rails.root}/tmp")
