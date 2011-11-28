@@ -1,0 +1,30 @@
+= yield
+
+- content_for :head do
+  %meta{ :name => "keywords", :content => keywords }
+  %meta{ :name => "description", :content => configuration['description'] }
+  %link{ :rel => "alternate", :type => "application/rss+xml", :title => rss_title, :href => rss_link}
+
+  %title= "#{configuration['name']} - #{title}"
+  %link{ :href => 'http://fonts.googleapis.com/css?family=Signika+Negative:600,300,400', :rel => 'stylesheet', :type => 'text/css' }
+  =raw stylesheet_link_merged 'screen', :media => 'screen'
+
+- content_for :header do
+  %h1= link_to configuration['name'], root_path
+
+  %p#about= raw configuration["about"]
+
+- content_for :footer do
+  %p
+    = precede 'Pode usar, mixar e redistribuir é ' do
+      = succeed ' para todos os textos.' do
+        %a{:rel => "license", :href => "http://duckduckgo.com/?q=copyleft"} copyleft
+
+- content_for :js do
+  %script{ :type => "text/javascript", :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" }
+  %script{ :type => "text/javascript", :src => "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js" }
+  :javascript
+    var _gaq=[['_setAccount','#{configuration['google_analytics']['tracker_id']}'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
