@@ -1,10 +1,16 @@
-= render :layout => "layouts/public", :locals => {:title => @post.title, :description => @post.title } do
+- content_for :head do
+  = stylesheet_link_tag 'section/post'
+
+= render :layout => "layouts/post", :locals => {:title => @post.title, :description => @post.title } do
   %article{:id => "article-#{@post.id}", :class => "post", :role => "main"}
+
+    = raw link_to '← Back to posts', root_path
+
     %header
       %time{:datetime => @post.created_at }= I18n.l @post.created_at, :format => :header
       %h2.title= @post.title
     = raw @post.body.to_html
-    %section#comments= render "shared/comments"
 
-  - content_for(:sidebar) do
-    = image_tag "bruno.jpg"
+    %section#comments= render "shared/comments"
+    
+    = raw link_to '← Back to posts', root_path
