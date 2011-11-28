@@ -1,0 +1,35 @@
+ body.bp {line-height: 1.5; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; color: black; background: none; font-size: 10pt}
+ body.bp .container {background: none}
+ body.bp hr {background: #cccccc; color: #cccccc; width: 100%; height: 2px; margin: 2em 0; padding: 0; border: none}
+ body.bp hr.space {background: white; color: white}
+ body.bp h1, body.bp h2, body.bp h3, body.bp h4, body.bp h5, body.bp h6 {font-family: "Helvetica Neue", Arial, Helvetica, sans-serif}
+ body.bp code {font-size: 0.9em; font-family: "andale mono", "lucida console", monospace}
+ body.bp a img {border: none}
+ body.bp a:link, body.bp a:visited {background: transparent; font-weight: 700; text-decoration: underline}
+ body.bp p img.top {margin-top: 0}
+ body.bp blockquote {margin: 1.5em; padding: 1em; font-style: italic; font-size: 0.9em}
+ body.bp .small {font-size: 0.9em}
+ body.bp .large {font-size: 1.1em}
+ body.bp .quiet {color: #999999}
+ body.bp .hide {display: none}
+ pre code {display: block; background: #f0f0f0; color: black}
+ pre code[class]:after {content: "highlight: " attr(class); display: block; text-align: right; font-size: smaller; color: #cccccc; background: white; border-top: solid 1px; padding-top: 0.5em}
+ pre .ruby .subst, pre .xml .title, pre .lisp .title {color: black}
+ pre .string, pre .title, pre .constant, pre .parent, pre .tag .attribute .value {color: #880000}
+ pre .rules .value {color: #880000}
+ pre .rules .value .number {color: #880000}
+ pre .preprocessor {color: #880000}
+ pre .ruby .symbol {color: #880000}
+ pre .ruby .symbol .string, pre .ruby .symbol .keyword, pre .ruby .symbol .keymethods {color: #880000}
+ pre .instancevar, pre .aggregate, pre .template_tag, pre .django .variable, pre .smalltalk .class, pre .addition, pre .flow, pre .stream, pre .bash .variable {color: #880000}
+ pre .apache .tag, pre .apache .cbracket {color: #880000}
+ pre .tex .command, pre .tex .special {color: #880000}
+ pre .comment, pre .annotation, pre .template_comment, pre .diff .header, pre .chunk {color: #888888}
+ pre .number, pre .date, pre .regexp, pre .literal {color: #008800}
+ pre .smalltalk .symbol, pre .smalltalk .char {color: #008800}
+ pre .change {color: #008800}
+ pre .label, pre .javadoc, pre .ruby .string, pre .decorator, pre .filter .argument, pre .localvars, pre .array, pre .attr_selector, pre .pseudo, pre .pi, pre .doctype, pre .deletion, pre .envvar, pre .shebang, pre .apache .sqbracket, pre .nginx .built_in, pre .tex .formula {color: #8888ff}
+ pre .javadoctag, pre .phpdoc, pre .yardoctag, pre .keyword, pre .id, pre .phpdoc, pre .title, pre .built_in, pre .aggregate, pre .smalltalk .class, pre .winutils, pre .bash .variable, pre .apache .tag, pre .tex .command {font-weight: bold}
+ pre .nginx .built_in {font-weight: normal}
+ pre .html .css, pre .html .javascript, pre .html .vbscript {opacity: 0.5}
+ pre .tex .formula {opacity: 0.5}

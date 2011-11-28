@@ -1,0 +1,175 @@
+ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline}
+ body {line-height: 1}
+ ol, ul {list-style: none}
+ table {border-collapse: collapse; border-spacing: 0}
+ caption, th, td {text-align: left; font-weight: normal; vertical-align: middle}
+ q, blockquote {quotes: none}
+ q:before, q:after, blockquote:before, blockquote:after {content: ""; content: none}
+ a img {border: none}
+ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {display: block}
+ pre code {display: block; background: #f0f0f0; color: black}
+ pre code[class]:after {content: "highlight: " attr(class); display: block; text-align: right; font-size: smaller; color: #cccccc; background: white; border-top: solid 1px; padding-top: 0.5em}
+ pre .ruby .subst, pre .xml .title, pre .lisp .title {color: black}
+ pre .string, pre .title, pre .constant, pre .parent, pre .tag .attribute .value {color: #880000}
+ pre .rules .value {color: #880000}
+ pre .rules .value .number {color: #880000}
+ pre .preprocessor {color: #880000}
+ pre .ruby .symbol {color: #880000}
+ pre .ruby .symbol .string, pre .ruby .symbol .keyword, pre .ruby .symbol .keymethods {color: #880000}
+ pre .instancevar, pre .aggregate, pre .template_tag, pre .django .variable, pre .smalltalk .class, pre .addition, pre .flow, pre .stream, pre .bash .variable {color: #880000}
+ pre .apache .tag, pre .apache .cbracket {color: #880000}
+ pre .tex .command, pre .tex .special {color: #880000}
+ pre .comment, pre .annotation, pre .template_comment, pre .diff .header, pre .chunk {color: #888888}
+ pre .number, pre .date, pre .regexp, pre .literal {color: #008800}
+ pre .smalltalk .symbol, pre .smalltalk .char {color: #008800}
+ pre .change {color: #008800}
+ pre .label, pre .javadoc, pre .ruby .string, pre .decorator, pre .filter .argument, pre .localvars, pre .array, pre .attr_selector, pre .pseudo, pre .pi, pre .doctype, pre .deletion, pre .envvar, pre .shebang, pre .apache .sqbracket, pre .nginx .built_in, pre .tex .formula {color: #8888ff}
+ pre .javadoctag, pre .phpdoc, pre .yardoctag, pre .keyword, pre .id, pre .phpdoc, pre .title, pre .built_in, pre .aggregate, pre .smalltalk .class, pre .winutils, pre .bash .variable, pre .apache .tag, pre .tex .command {font-weight: bold}
+ pre .nginx .built_in {font-weight: normal}
+ pre .html .css, pre .html .javascript, pre .html .vbscript {opacity: 0.5}
+ pre .tex .formula {opacity: 0.5}
+ body a, body p, body span, body strong, body b, body time {font-family: 'Signika Negative', sans-serif}
+ body a {color: #404040; text-decoration: none}
+ body a:hover {color: #692849}
+ body h1 {font-family: 'Signika Negative', sans-serif; font-size: 3.8em; font-weight: bold; color: #404040}
+ body h2 {font-family: 'Signika Negative', sans-serif; font-size: 1.8em; font-weight: bold; color: #404040}
+ body h3 {font-family: 'Signika Negative', sans-serif; font-size: -0.2em; font-weight: bold; color: #404040}
+ body h4 {font-family: 'Signika Negative', sans-serif; font-size: -2.2em; font-weight: bold; color: #404040}
+ body h5 {font-family: 'Signika Negative', sans-serif; font-size: -4.2em; font-weight: bold; color: #404040}
+ body h6 {font-family: 'Signika Negative', sans-serif; font-size: -6.2em; font-weight: bold; color: #404040}
+ body aside h1 {font-size: 1em}
+ body aside a {font-weight: normal; font-size: 0.8em}
+ body aside time span {font-size: 0.8em; text-align: center}
+ body article > a {color: blue; font-size: 11px; font-weight: normal}
+ body article header time {font-size: 1.3em}
+ body article header time span {text-align: center}
+ body header h1 {text-align: center}
+ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline}
+ body {line-height: 1}
+ ol, ul {list-style: none}
+ table {border-collapse: collapse; border-spacing: 0}
+ caption, th, td {text-align: left; font-weight: normal; vertical-align: middle}
+ q, blockquote {quotes: none}
+ q:before, q:after, blockquote:before, blockquote:after {content: ""; content: none}
+ a img {border: none}
+ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {display: block}
+ pre code {display: block; background: #f0f0f0; color: black}
+ pre code[class]:after {content: "highlight: " attr(class); display: block; text-align: right; font-size: smaller; color: #cccccc; background: white; border-top: solid 1px; padding-top: 0.5em}
+ pre .ruby .subst, pre .xml .title, pre .lisp .title {color: black}
+ pre .string, pre .title, pre .constant, pre .parent, pre .tag .attribute .value {color: #880000}
+ pre .rules .value {color: #880000}
+ pre .rules .value .number {color: #880000}
+ pre .preprocessor {color: #880000}
+ pre .ruby .symbol {color: #880000}
+ pre .ruby .symbol .string, pre .ruby .symbol .keyword, pre .ruby .symbol .keymethods {color: #880000}
+ pre .instancevar, pre .aggregate, pre .template_tag, pre .django .variable, pre .smalltalk .class, pre .addition, pre .flow, pre .stream, pre .bash .variable {color: #880000}
+ pre .apache .tag, pre .apache .cbracket {color: #880000}
+ pre .tex .command, pre .tex .special {color: #880000}
+ pre .comment, pre .annotation, pre .template_comment, pre .diff .header, pre .chunk {color: #888888}
+ pre .number, pre .date, pre .regexp, pre .literal {color: #008800}
+ pre .smalltalk .symbol, pre .smalltalk .char {color: #008800}
+ pre .change {color: #008800}
+ pre .label, pre .javadoc, pre .ruby .string, pre .decorator, pre .filter .argument, pre .localvars, pre .array, pre .attr_selector, pre .pseudo, pre .pi, pre .doctype, pre .deletion, pre .envvar, pre .shebang, pre .apache .sqbracket, pre .nginx .built_in, pre .tex .formula {color: #8888ff}
+ pre .javadoctag, pre .phpdoc, pre .yardoctag, pre .keyword, pre .id, pre .phpdoc, pre .title, pre .built_in, pre .aggregate, pre .smalltalk .class, pre .winutils, pre .bash .variable, pre .apache .tag, pre .tex .command {font-weight: bold}
+ pre .nginx .built_in {font-weight: normal}
+ pre .html .css, pre .html .javascript, pre .html .vbscript {opacity: 0.5}
+ pre .tex .formula {opacity: 0.5}
+ body {background: #FFF}
+ body > div {position: relative; width: 950px; margin: 0 auto; overflow: hidden; *zoom: 1}
+ body > div > header, body > div > footer {display: inline; float: left; margin-right: 0; width: 950px}
+ * html body > div > header, * html body > div > footer {overflow-x: hidden}
+ body > div > header {border-bottom: 1px solid #CCC; padding: 20px 0; margin-bottom: 20px}
+ body #posts {display: inline; float: left; margin-right: 10px; width: 710px}
+ * html body #posts {overflow-x: hidden}
+ body #posts li {padding: 10px 0}
+ body aside {display: inline; float: left; margin-right: 10px; width: 230px; margin-right: 0}
+ * html body aside {overflow-x: hidden}
+ body aside img {width: 100%; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px}
+ body aside nav {width: 185px; margin: 5px auto}
+ body aside nav ul {overflow: hidden}
+ body aside nav ul li {float: left; padding: 0 5px; border-left: 1px solid #CCC}
+ body aside nav ul li:first-child {border: none}
+ body aside h1 {border-top: 1px solid #CCC; padding: 10px 0}
+ body aside > ul li {margin-bottom: 10px; position: relative; padding: 5px 0}
+ body aside > ul li:hover {background: #F8F8F8}
+ body aside > ul li a {display: block; max-width: 178px; height: 32px; padding: 7px 0 0 5px}
+ body aside > ul li time {background: url('/images/default/post-date.png?1322481683') no-repeat; position: absolute; top: 5px; right: 7px; width: 32px; height: 22px; padding-top: 11px}
+ body aside > ul li time span {display: block; clear: both}
+ body a:-webkit-any-link {color: #000}
+ body {background: url('/images/noise.png?1322443963') #eeeeee}
+ body > div {width: 950px; margin: 0 auto; overflow: hidden; *zoom: 1}
+ body > div > header, body > div > footer {display: inline; float: left; margin-right: 0; width: 950px}
+ * html body > div > header, * html body > div > footer {overflow-x: hidden}
+ body {background: #f7f7f7}
+ body > div > header {margin: 0 auto; padding: 0 10px; float: none; display: block; width: 928px; -webkit-border-radius: 0 0 8px 8px; -moz-border-radius: 0 0 8px 8px; -ms-border-radius: 0 0 8px 8px; -o-border-radius: 0 0 8px 8px; border-radius: 0 0 8px 8px; border: 1px solid #999; border-top: none; background: #FFF; overflow: hidden; *zoom: 1}
+ body > div > header h1 {margin: 3px 0; display: inline; float: left; margin-right: 10px; width: 630px}
+ * html body > div > header h1 {overflow-x: hidden}
+ body > div > header h1 a {text-decoration: none}
+ body > div > header nav {display: inline; float: left; margin-right: 0; width: 270px; float: right}
+ * html body > div > header nav {overflow-x: hidden}
+ body > div > header nav ul {margin: 0; padding: 0; float: right}
+ body > div > header nav ul li {padding: 17px 0 0; margin-left: 10px; float: left; list-style: none; width: 100px}
+ body > div h2 {font: normal normal 40px/42px Georgia; margin: 30px 0 20px 0}
+ body > div a.button {position: fixed; top: 92px; left: 670px; width: 44px; z-index: 2; font-size: 13px; color: #FFF}
+ body > div form {display: inline; float: left; margin-right: 10px; width: 710px}
+ * html body > div form {overflow-x: hidden}
+ body > div form fieldset {margin: 0; padding: 0}
+ body > div form fieldset.buttons {position: fixed; top: 80px; left: 746px; z-index: 1; overflow: hidden; padding: 0}
+ body > div form fieldset.buttons input {float: right; padding: 7px 15px; font-size: 13px}
+ body > div form fieldset li {margin: 0 0 10px 0}
+ body > div form fieldset li div {margin-top: 0}
+ body > div form fieldset li label {display: block; font: normal normal 18px Verdana}
+ body > div form fieldset li label abbr {font-size: 15px; opacity: 0.2}
+ body > div form fieldset li input:not([type='submit']) {width: 97%; font: normal normal 18px/18px Verdana; margin: 0; padding: 5px 5px}
+ body > div article.post {display: inline; float: left; margin-right: 10px; width: 710px; display: inline; float: left; position: relative; margin: 0 0px 1.5em 0px; float: left}
+ * html body > div article.post {overflow-x: hidden}
+ body > div aside {display: inline; float: left; margin-right: 0; width: 190px; float: right; padding: 10px; border: 1px solid #BBB; background: #FFF; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px}
+ * html body > div aside {overflow-x: hidden}
+ body > div aside ul {margin: 0; padding: 0}
+ body > div aside ul li {overflow: hidden; *zoom: 1; border-bottom: 1px solid #CCC; font: normal normal 13px/18px Verdana}
+ body > div aside ul li a {padding: 5px; display: block; color: #000}
+ body > div aside ul li a:hover {background: #000; color: #FFF}
+ body > div aside input[type='text'] {width: 175px}
+ .markItUp .markItUpButton1 a {background-image: url(/images/markitup/h1.png)}
+ .markItUp .markItUpButton2 a {background-image: url(/images/markitup/h2.png)}
+ .markItUp .markItUpButton3 a {background-image: url(/images/markitup/h3.png)}
+ .markItUp .markItUpButton4 a {background-image: url(/images/markitup/h4.png)}
+ .markItUp .markItUpButton5 a {background-image: url(/images/markitup/h5.png)}
+ .markItUp .markItUpButton6 a {background-image: url(/images/markitup/h6.png)}
+ .markItUp .markItUpButton7 a {background-image: url(/images/markitup/bold.png)}
+ .markItUp .markItUpButton8 a {background-image: url(/images/markitup/italic.png)}
+ .markItUp .markItUpButton9 a {background-image: url(/images/markitup/list-bullet.png)}
+ .markItUp .markItUpButton10 a {background-image: url(/images/markitup/list-numeric.png)}
+ .markItUp .markItUpButton11 a {background-image: url(/images/markitup/picture.png)}
+ .markItUp .markItUpButton12 a {background-image: url(/images/markitup/link.png)}
+ .markItUp .markItUpButton13 a {background-image: url(/images/markitup/quotes.png)}
+ .markItUp .markItUpButton14 a {background-image: url(/images/markitup/code.png)}
+ .markItUp .preview a {background-image: url(/images/markitup/preview.png)}
+ .markItUp {width: 700px; margin: 5px 0 5px 0; border: 5px solid #f5f5f5}
+ .markItUp * {margin: 0px; padding: 0px; outline: none}
+ .markItUp a:link, .markItUp a:visited {color: black; text-decoration: none}
+ .markItUpContainer {border: 1px solid #3c769d; background: white url(/images/markitup/bg-container.png) repeat-x top left; padding: 5px 5px 2px 5px; font: 11px Verdana, Arial, Helvetica, sans-serif}
+ .markItUpEditor {font: 12px "Courier New", Courier, monospace; padding: 5px 5px 5px 35px; border: 3px solid #3c769d; width: 643px; height: 320px; background-image: url(/images/markitup/bg-editor.png); background-repeat: no-repeat; clear: both; display: block; line-height: 18px; overflow: auto}
+ .markItUpPreviewFrame {overflow: auto; background-color: white; border: 1px solid #3c769d; width: 99.9%; height: 300px; margin: 5px 0}
+ .markItUpFooter {width: 100%; cursor: n-resize}
+ .markItUpResizeHandle {overflow: hidden; width: 22px; height: 5px; margin-left: auto; margin-right: auto; background-image: url(/images/markitup/handle.png); cursor: n-resize}
+   .markItUpHeader ul li {list-style: none; float: left; position: relative}
+ .markItUpHeader ul li ul {display: none}
+ .markItUpHeader ul li:hover > ul {display: block}
+ .markItUpHeader ul .markItUpDropMenu {background: transparent url(/images/markitup/menu.png) no-repeat 115% 50%; margin-right: 5px}
+ .markItUpHeader ul .markItUpDropMenu li {margin-right: 0px}
+ .markItUpHeader ul .markItUpSeparator {margin: 0 10px; width: 1px; height: 16px; overflow: hidden; background-color: #cccccc}
+ .markItUpHeader ul ul {display: none; position: absolute; top: 18px; left: 0px; background: #f5f5f5; border: 1px solid #3c769d; height: inherit}
+ .markItUpHeader ul ul .markItUpSeparator {width: auto; height: 1px; margin: 0px}
+ .markItUpHeader ul ul li {float: none; border-bottom: 1px solid #3c769d}
+ .markItUpHeader ul ul .markItUpDropMenu {background: #f5f5f5 url(/images/markitup/submenu.png) no-repeat 100% 50%}
+ .markItUpHeader ul ul ul {position: absolute; top: -1px; left: 150px}
+ .markItUpHeader ul ul ul li {float: none}
+ .markItUpHeader ul a {display: block; width: 16px; height: 16px; text-indent: -10000px; background-repeat: no-repeat; padding: 3px; margin: 0px}
+ .markItUpHeader ul ul a {display: block; padding-left: 0px; text-indent: 0; width: 120px; padding: 5px 5px 5px 25px; background-position: 2px 50%}
+ .markItUpHeader ul ul a:hover {color: white; background-color: #3c769d}
+    .html .markItUpEditor {background-image: url(/images/markitup/bg-editor-html.png)}
+ .markdown .markItUpEditor {background-image: url(/images/markitup/bg-editor-markdown.png)}
+ .textile .markItUpEditor {background-image: url(/images/markitup/bg-editor-textile.png)}
+ .bbcode .markItUpEditor {background-image: url(/images/markitup/bg-editor-bbcode.png)}
+ .wiki .markItUpEditor, .dotclear .markItUpEditor {background-image: url(/images/markitup/bg-editor-wiki.png)}

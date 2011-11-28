@@ -1,0 +1,67 @@
+ body a, body p, body span, body strong, body b, body time {font-family: 'Signika Negative', sans-serif}
+ body a {color: #404040; text-decoration: none}
+ body a:hover {color: #692849}
+ body h1 {font-family: 'Signika Negative', sans-serif; font-size: 3.8em; font-weight: bold; color: #404040}
+ body h2 {font-family: 'Signika Negative', sans-serif; font-size: 1.8em; font-weight: bold; color: #404040}
+ body h3 {font-family: 'Signika Negative', sans-serif; font-size: -0.2em; font-weight: bold; color: #404040}
+ body h4 {font-family: 'Signika Negative', sans-serif; font-size: -2.2em; font-weight: bold; color: #404040}
+ body h5 {font-family: 'Signika Negative', sans-serif; font-size: -4.2em; font-weight: bold; color: #404040}
+ body h6 {font-family: 'Signika Negative', sans-serif; font-size: -6.2em; font-weight: bold; color: #404040}
+ body aside h1 {font-size: 1em}
+ body aside a {font-weight: normal; font-size: 0.8em}
+ body aside time span {font-size: 0.8em; text-align: center}
+ body article > a {color: blue; font-size: 11px; font-weight: normal}
+ body article header time {font-size: 1.3em}
+ body article header time span {text-align: center}
+ body header h1 {text-align: center}
+ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline}
+ body {line-height: 1}
+ ol, ul {list-style: none}
+ table {border-collapse: collapse; border-spacing: 0}
+ caption, th, td {text-align: left; font-weight: normal; vertical-align: middle}
+ q, blockquote {quotes: none}
+ q:before, q:after, blockquote:before, blockquote:after {content: ""; content: none}
+ a img {border: none}
+ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {display: block}
+ pre code {display: block; background: #f0f0f0; color: black}
+ pre code[class]:after {content: "highlight: " attr(class); display: block; text-align: right; font-size: smaller; color: #cccccc; background: white; border-top: solid 1px; padding-top: 0.5em}
+ pre .ruby .subst, pre .xml .title, pre .lisp .title {color: black}
+ pre .string, pre .title, pre .constant, pre .parent, pre .tag .attribute .value {color: #880000}
+ pre .rules .value {color: #880000}
+ pre .rules .value .number {color: #880000}
+ pre .preprocessor {color: #880000}
+ pre .ruby .symbol {color: #880000}
+ pre .ruby .symbol .string, pre .ruby .symbol .keyword, pre .ruby .symbol .keymethods {color: #880000}
+ pre .instancevar, pre .aggregate, pre .template_tag, pre .django .variable, pre .smalltalk .class, pre .addition, pre .flow, pre .stream, pre .bash .variable {color: #880000}
+ pre .apache .tag, pre .apache .cbracket {color: #880000}
+ pre .tex .command, pre .tex .special {color: #880000}
+ pre .comment, pre .annotation, pre .template_comment, pre .diff .header, pre .chunk {color: #888888}
+ pre .number, pre .date, pre .regexp, pre .literal {color: #008800}
+ pre .smalltalk .symbol, pre .smalltalk .char {color: #008800}
+ pre .change {color: #008800}
+ pre .label, pre .javadoc, pre .ruby .string, pre .decorator, pre .filter .argument, pre .localvars, pre .array, pre .attr_selector, pre .pseudo, pre .pi, pre .doctype, pre .deletion, pre .envvar, pre .shebang, pre .apache .sqbracket, pre .nginx .built_in, pre .tex .formula {color: #8888ff}
+ pre .javadoctag, pre .phpdoc, pre .yardoctag, pre .keyword, pre .id, pre .phpdoc, pre .title, pre .built_in, pre .aggregate, pre .smalltalk .class, pre .winutils, pre .bash .variable, pre .apache .tag, pre .tex .command {font-weight: bold}
+ pre .nginx .built_in {font-weight: normal}
+ pre .html .css, pre .html .javascript, pre .html .vbscript {opacity: 0.5}
+ pre .tex .formula {opacity: 0.5}
+ body {background: #FFF}
+ body > div {position: relative; width: 950px; margin: 0 auto; overflow: hidden; *zoom: 1}
+ body > div > header, body > div > footer {display: inline; float: left; margin-right: 0; width: 950px}
+ * html body > div > header, * html body > div > footer {overflow-x: hidden}
+ body > div > header {border-bottom: 1px solid #CCC; padding: 20px 0; margin-bottom: 20px}
+ body #posts {display: inline; float: left; margin-right: 10px; width: 710px}
+ * html body #posts {overflow-x: hidden}
+ body #posts li {padding: 10px 0}
+ body aside {display: inline; float: left; margin-right: 10px; width: 230px; margin-right: 0}
+ * html body aside {overflow-x: hidden}
+ body aside img {width: 100%; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px}
+ body aside nav {width: 185px; margin: 5px auto}
+ body aside nav ul {overflow: hidden}
+ body aside nav ul li {float: left; padding: 0 5px; border-left: 1px solid #CCC}
+ body aside nav ul li:first-child {border: none}
+ body aside h1 {border-top: 1px solid #CCC; padding: 10px 0}
+ body aside > ul li {margin-bottom: 10px; position: relative; padding: 5px 0}
+ body aside > ul li:hover {background: #F8F8F8}
+ body aside > ul li a {display: block; max-width: 178px; height: 32px; padding: 7px 0 0 5px}
+ body aside > ul li time {background: url('/images/default/post-date.png?1322481683') no-repeat; position: absolute; top: 5px; right: 7px; width: 32px; height: 22px; padding-top: 11px}
+ body aside > ul li time span {display: block; clear: both}
