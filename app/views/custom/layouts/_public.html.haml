@@ -17,11 +17,24 @@
   - content_for(:sidebar) do
     = image_tag "bruno.jpg"
     %nav
+      %ul
+        %li
+          %a{:href => "http://twitter.com/bchagas"} Twitter
+        %li
+          %a{:href => "http://github.com/bchagas"} Github
+        %li
+          %a{:href => "http://www.linkedin.com/in/brunochagas"} Linkedin
+
+    %h1= 'Últimos posts'
+
     %ul
-      %li
-        %a{:href => "http://twitter.com/bchagas"} Twitter
-      %li
-        %a{:href => "http://github.com/bchagas"} Github
+      - @posts.each do |post|
+        %li
+          %a{ :href => post_path(post) + "#article-#{post.id}"}
+            = post.title
+            %time{ :datetime => post.created_at }= I18n.l post.created_at, :format => :header
+
+    %h1= 'Seções'
 
 - content_for :footer do
   %p
