@@ -13,6 +13,7 @@ stylesheets:
   - ie
 - screen:
   - screen
+  - section/post
 - print:
   - print
 - panel:
