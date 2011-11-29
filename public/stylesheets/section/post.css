@@ -1,0 +1,200 @@
+/* line 17, ../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.12.alpha.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.12.alpha.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.12.alpha.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.12.alpha.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.12.alpha.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.12.alpha.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.12.alpha.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.12.alpha.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.12.alpha.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 2, ../../../app/stylesheets/syntax_highlight.sass */
+pre code {
+  display: block;
+  background: #f0f0f0;
+  color: black;
+}
+/* line 3, ../../../app/stylesheets/syntax_highlight.sass */
+pre code[class]:after {
+  content: "highlight: " attr(class);
+  display: block;
+  text-align: right;
+  font-size: smaller;
+  color: #cccccc;
+  background: white;
+  border-top: solid 1px;
+  padding-top: 0.5em;
+}
+/* line 15, ../../../app/stylesheets/syntax_highlight.sass */
+pre .ruby .subst, pre .xml .title, pre .lisp .title {
+  color: black;
+}
+/* line 17, ../../../app/stylesheets/syntax_highlight.sass */
+pre .string, pre .title, pre .constant, pre .parent, pre .tag .attribute .value {
+  color: #880000;
+}
+/* line 19, ../../../app/stylesheets/syntax_highlight.sass */
+pre .rules .value {
+  color: #880000;
+}
+/* line 21, ../../../app/stylesheets/syntax_highlight.sass */
+pre .rules .value .number {
+  color: #880000;
+}
+/* line 23, ../../../app/stylesheets/syntax_highlight.sass */
+pre .preprocessor {
+  color: #880000;
+}
+/* line 25, ../../../app/stylesheets/syntax_highlight.sass */
+pre .ruby .symbol {
+  color: #880000;
+}
+/* line 27, ../../../app/stylesheets/syntax_highlight.sass */
+pre .ruby .symbol .string, pre .ruby .symbol .keyword, pre .ruby .symbol .keymethods {
+  color: #880000;
+}
+/* line 29, ../../../app/stylesheets/syntax_highlight.sass */
+pre .instancevar, pre .aggregate, pre .template_tag, pre .django .variable, pre .smalltalk .class, pre .addition, pre .flow, pre .stream, pre .bash .variable {
+  color: #880000;
+}
+/* line 32, ../../../app/stylesheets/syntax_highlight.sass */
+pre .apache .tag, pre .apache .cbracket {
+  color: #880000;
+}
+/* line 35, ../../../app/stylesheets/syntax_highlight.sass */
+pre .tex .command, pre .tex .special {
+  color: #880000;
+}
+/* line 37, ../../../app/stylesheets/syntax_highlight.sass */
+pre .comment, pre .annotation, pre .template_comment, pre .diff .header, pre .chunk {
+  color: #888888;
+}
+/* line 39, ../../../app/stylesheets/syntax_highlight.sass */
+pre .number, pre .date, pre .regexp, pre .literal {
+  color: #008800;
+}
+/* line 42, ../../../app/stylesheets/syntax_highlight.sass */
+pre .smalltalk .symbol, pre .smalltalk .char {
+  color: #008800;
+}
+/* line 44, ../../../app/stylesheets/syntax_highlight.sass */
+pre .change {
+  color: #008800;
+}
+/* line 46, ../../../app/stylesheets/syntax_highlight.sass */
+pre .label, pre .javadoc, pre .ruby .string, pre .decorator, pre .filter .argument, pre .localvars, pre .array, pre .attr_selector, pre .pseudo, pre .pi, pre .doctype, pre .deletion, pre .envvar, pre .shebang, pre .apache .sqbracket, pre .nginx .built_in, pre .tex .formula {
+  color: #8888ff;
+}
+/* line 48, ../../../app/stylesheets/syntax_highlight.sass */
+pre .javadoctag, pre .phpdoc, pre .yardoctag, pre .keyword, pre .id, pre .phpdoc, pre .title, pre .built_in, pre .aggregate, pre .smalltalk .class, pre .winutils, pre .bash .variable, pre .apache .tag, pre .tex .command {
+  font-weight: bold;
+}
+/* line 50, ../../../app/stylesheets/syntax_highlight.sass */
+pre .nginx .built_in {
+  font-weight: normal;
+}
+/* line 53, ../../../app/stylesheets/syntax_highlight.sass */
+pre .html .css, pre .html .javascript, pre .html .vbscript {
+  opacity: 0.5;
+}
+/* line 55, ../../../app/stylesheets/syntax_highlight.sass */
+pre .tex .formula {
+  opacity: 0.5;
+}
+
+/* line 5, ../../../app/stylesheets/section/post.scss */
+body article {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 950px;
+  margin: 0;
+}
+/* line 147, ../../../../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.12.alpha.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body article {
+  overflow-x: hidden;
+}
+/* line 9, ../../../app/stylesheets/section/post.scss */
+body article header {
+  position: relative;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #CCC;
+}
+/* line 15, ../../../app/stylesheets/section/post.scss */
+body article header h2 {
+  width: 90%;
+}
+/* line 19, ../../../app/stylesheets/section/post.scss */
+body article header time {
+  position: absolute;
+  width: 56px;
+  right: 0;
+  top: -28px;
+  padding: 10px;
+  border: 1px solid #CCC;
+}
+/* line 27, ../../../app/stylesheets/section/post.scss */
+body article header time span {
+  padding: 2px;
+}
+/* line 30, ../../../app/stylesheets/section/post.scss */
+body article header time span + span + span {
+  clear: both;
+  display: block;
+}
