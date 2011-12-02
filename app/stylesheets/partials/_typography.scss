@@ -1,7 +1,7 @@
 $black: #404040;
 
 body {
-  a, p, span, strong, b, time {
+  a, p, span, strong, b, time, ul {
     font-family: 'Signika Negative', sans-serif;
   }
 
@@ -62,11 +62,31 @@ body {
         }
       }
     }
+
+    ul {
+      li {
+        padding-bottom: 10px;
+      }  
+    }
   }
 
   header {
     h1 {
       text-align: center;
     }
+  }
+
+  footer {
+    text-align: center;
+    font-weight: lighter;
+
+    a {
+      font-weight: bold;
+      text-decoration: underline;
+        
+      &:hover {
+        text-decoration: none;
+      }
+      }
   }
 }
