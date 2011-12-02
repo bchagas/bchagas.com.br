@@ -34,8 +34,6 @@
             = post.title
             %time{ :datetime => post.created_at }= I18n.l post.created_at, :format => :header
 
-    %h1= 'Seções'
-
 - content_for :footer do
   %p
     = precede 'Pode usar, mixar e redistribuir é ' do
