@@ -6,6 +6,11 @@ body {
    @include column(24);
    margin: 0;
 
+   a {
+    display: block;
+    magin-top: -5px
+  }
+
     header {
       position: relative;
       padding: 10px 0;
@@ -20,18 +25,20 @@ body {
         position: absolute; 
         width:  56px;
         right: 0;
-        top: -28px;
+        top: -27px;
         padding: 10px;
         border: 1px solid #CCC;
         
         span {
+          border-bottom: 1px solid #CCC;
           padding: 2px;
+          clear: both;
+          display: block;
+
           & + span {
-            & + span {
-              clear: both;
-              display: block;
-            }
+            border: none;
           }
+
         }
       }
     }
