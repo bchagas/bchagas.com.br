@@ -28,6 +28,7 @@ end
 
 group :production do
   gem "mysql2"
+	gem 'unicorn'
   gem 'newrelic_rpm', '>=2.13.0.beta5'
 end
 
