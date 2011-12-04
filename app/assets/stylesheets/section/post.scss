@@ -1,0 +1,46 @@
+@import "default";
+@import "compass/css3";
+
+body {
+  article {
+   @include column(24);
+   margin: 0;
+
+   a {
+    display: block;
+    magin-top: -5px
+  }
+
+    header {
+      position: relative;
+      padding: 10px 0;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #CCC;
+
+      h2 {
+        width: 90%;
+      }
+
+      time {
+        position: absolute; 
+        width:  56px;
+        right: 0;
+        top: -27px;
+        padding: 10px;
+        border: 1px solid #CCC;
+        
+        span {
+          border-bottom: 1px solid #CCC;
+          padding: 2px;
+          clear: both;
+          display: block;
+
+          & + span {
+            border: none;
+          }
+
+        }
+      }
+    }
+  }
+}

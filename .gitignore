@@ -23,6 +23,5 @@ gems
 capybara-*.html
 *.orig
 public/sitemap*
-.rvmrc
 *~
 config/database.yml
