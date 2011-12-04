@@ -1,0 +1,146 @@
+@import "default";
+@import "screen";
+
+body a:-webkit-any-link{
+  color: #000;
+}
+
+body {
+  background: image-url("noise.png") #eeeeee;
+  & > div{
+    @include container;
+    & > header, & > footer {
+      @include column($blueprint-grid-columns, true);
+    }
+  }
+}
+
+body{
+  background: #f7f7f7;
+  > div{
+    > header{
+      margin: 0 auto;
+      padding: 0 10px;
+      float: none;
+      display: block;
+      width: 928px;
+      @include border-radius(0 0 8px 8px );
+      border: 1px solid #999;
+      border-top: none;
+      background: #FFF;
+      @include clearfix;
+      h1{
+        margin: 3px 0;
+        @include column( ceil( $blueprint-grid-columns - 8)) ;
+        a{
+          text-decoration: none
+        }
+      }
+
+      nav{
+        @include column( ceil( $blueprint-grid-columns - 17), true) ;
+        float: right;
+        ul{
+          margin: 0;
+          padding: 0;
+          float: right;
+          li{
+            padding: 17px 0 0;
+            margin-left: 10px;
+            float: left;
+            list-style: none;
+            width: 100px;
+          }
+        }
+      }
+    }
+
+    h2{
+      font: normal normal 40px/42px Georgia;
+      margin: 30px 0 20px 0;
+    }
+    a.button{
+      position: fixed;
+      top: 92px;
+      left: 670px;
+      width: 44px;
+      z-index: 2;
+      font-size: 13px;
+      color: #FFF;
+    }
+    form{
+      @include column(18);
+    }
+    form fieldset{
+      margin: 0;
+      padding: 0;
+      &.buttons{
+        position: fixed;
+        top: 80px;
+        left: 746px;
+        z-index: 1;
+        overflow: hidden;
+        padding: 0;
+        input{
+          float: right;
+          padding: 7px 15px;
+          font-size: 13px;
+        }
+      }
+      li{
+        margin: 0 0 10px 0;
+        div{
+          margin-top: 0;
+        }
+        label{
+          display: block;
+          font: normal normal 18px Verdana;
+          abbr{
+            font-size: 15px;
+            opacity: 0.2;
+          }
+        }
+        input:not([type='submit']){
+          width: 97%;
+          font: normal normal 18px/18px Verdana;
+          margin: 0;
+          padding: 5px 5px;
+        }
+      }
+    }
+    article.post{
+      @include column(18);
+      @include push(0);
+      float: left;
+    }
+    aside{
+      @include column( ceil( $blueprint-grid-columns - 19), true) ;
+      float: right;
+      padding: 10px;
+      border: 1px solid #BBB;
+      background: #FFF;
+      @include border-radius(7px);
+      ul{
+        margin: 0;
+        padding: 0;
+        li{
+          @include clearfix;
+          border-bottom: 1px solid #CCC;
+          font: normal normal 13px/18px Verdana;
+          a{
+            padding: 5px;
+            display: block;
+            color: #000;
+            &:hover{
+              background: #000;
+              color: #FFF
+            }
+          }
+        }
+      }
+      input[type='text']{
+        width: 175px;
+      }
+    }
+  }
+}
