@@ -1,0 +1,56 @@
+pre
+  code
+    &[class]:after
+      content: "highlight: " attr(class)
+      display: block
+      text-align: right
+      font-size: smaller
+      color: #CCC
+      background: white
+      border-top: solid 1px
+      padding-top: 0.5em
+    display: block
+    background: #F0F0F0
+    color: black
+  .ruby .subst, .xml .title, .lisp .title
+    color: black
+  .string, .title, .constant, .parent, .tag .attribute .value
+    color: #800
+  .rules .value
+    color: #800
+    .number
+      color: #800
+  .preprocessor
+    color: #800
+  .ruby .symbol
+    color: #800
+    .string, .keyword, .keymethods
+      color: #800
+  .instancevar, .aggregate, .template_tag, .django .variable, .smalltalk .class, .addition, .flow, .stream, .bash .variable
+    color: #800
+  .apache
+    .tag, .cbracket
+      color: #800
+  .tex
+    .command, .special
+      color: #800
+  .comment, .annotation, .template_comment, .diff .header, .chunk
+    color: #888
+  .number, .date, .regexp, .literal
+    color: #080
+  .smalltalk
+    .symbol, .char
+      color: #080
+  .change
+    color: #080
+  .label, .javadoc, .ruby .string, .decorator, .filter .argument, .localvars, .array, .attr_selector, .pseudo, .pi, .doctype, .deletion, .envvar, .shebang, .apache .sqbracket, .nginx .built_in, .tex .formula
+    color: #88F
+  .javadoctag, .phpdoc, .yardoctag, .keyword, .id, .phpdoc, .title, .built_in, .aggregate, .smalltalk .class, .winutils, .bash .variable, .apache .tag, .tex .command
+    font-weight: bold
+  .nginx .built_in
+    font-weight: normal
+  .html
+    .css, .javascript, .vbscript
+      opacity: 0.5
+  .tex .formula
+    opacity: 0.5
