@@ -3,8 +3,8 @@
 Devise.setup do |config|
   # ==> LDAP Configuration
   # config.ldap_logger = true
-  config.ldap_create_user = true
-  config.ldap_use_admin_to_bind = true
+  #config.ldap_create_user = true
+  #config.ldap_use_admin_to_bind = true
   # config.ldap_update_password = true
   # config.ldap_config = "#{Rails.root}/config/ldap.yml"
   # config.ldap_check_group_membership = false
@@ -126,6 +126,7 @@ Devise.setup do |config|
   # If you have any extra navigational formats, like :iphone or :mobile, you
   # should add them to the navigational formats lists. Default is [:html]
   # config.navigational_formats = [:html, :iphone]
+  config.sign_out_via = :delete
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not (yet) supported by Devise,
