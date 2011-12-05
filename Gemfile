@@ -36,7 +36,6 @@ gem 'jquery-rails'
 # -----------------------------------------------
 
 gem 'json_pure', '>=1.4.6'
-gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 gem 'haml', '3.1.3'
 gem 'haml-rails', '>= 0.3.4'
 gem 'inherited_resources', '>=1.2.1'
