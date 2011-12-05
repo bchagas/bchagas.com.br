@@ -2,7 +2,7 @@
 %html
   %head
     %title= configuration['name']
-    =raw stylesheet_link_merged 'user', :media => 'screen, projection'
+    = raw stylesheet_link_tag 'user', :media => 'screen, projection'
     /[if lt IE 8]
       = stylesheet_link_tag 'ie', :media => 'screen, projection'
     = csrf_meta_tag
