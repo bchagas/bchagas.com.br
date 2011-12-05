@@ -18,3 +18,6 @@ pt-BR:
   time:
     formats:
       header: "%d/%m/%Y"
+  errors:
+    messages:
+      blank: 'Nome não pode ficar em branco'

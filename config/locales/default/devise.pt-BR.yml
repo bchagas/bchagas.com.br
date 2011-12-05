@@ -37,3 +37,11 @@ pt-BR:
         subject: 'Instruções de reinicialização de senha'
       unlock_instructions:
         subject: 'Instruções de desbloqueio'
+  
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: 'Nome não pode ficar em branco'
