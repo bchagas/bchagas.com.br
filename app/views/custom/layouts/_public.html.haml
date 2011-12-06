@@ -15,36 +15,18 @@
   %p#about= raw configuration["about"]
 
   - content_for(:sidebar) do
-    = image_tag "bruno.jpg"
-    %nav
-      %ul
-        %li
-          %a{:href => "http://twitter.com/bchagas"} Twitter
-        %li
-          %a{:href => "http://github.com/bchagas"} Github
-        %li
-          %a{:href => "http://www.linkedin.com/in/brunochagas"} Linkedin
+    = form_tag 'http://google.com/search', :method => :get do
+      = hidden_field_tag :sitesearch, request.host
+      = text_field_tag :q
+      = submit_tag t(:search)
 
-    %h1= 'Últimos posts'
-
-    %ul
-      - @posts.each do |post|
-        %li
-          %a{ :href => post_path(post) + "#article-#{post.id}"}
-            = post.title
-            %time{ :datetime => post.created_at }= I18n.l post.created_at, :format => :header
+    = render 'shared/about_me'
+    = render 'shared/latest_posts'
 
 - content_for :footer do
-  %p
-    = precede 'Pode usar, mixar e redistribuir é ' do
-      = succeed ' para todos os textos.' do
-        %a{:rel => "license", :href => "http://duckduckgo.com/?q=copyleft"} copyleft
+  = render 'shared/footer'
 
 - content_for :js do
   %script{ :type => "text/javascript", :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" }
   %script{ :type => "text/javascript", :src => "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js" }
-  :javascript
-    var _gaq=[['_setAccount','#{configuration['google_analytics']['tracker_id']}'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
+  = render "get_clicky"
