@@ -11,5 +11,5 @@
       - unless yield(:sidebar).empty?
         %aside= yield :sidebar
       %footer= yield :footer
-      =raw javascript_include_merged :base
+      =raw javascript_include_tag 'application'
       = yield :js

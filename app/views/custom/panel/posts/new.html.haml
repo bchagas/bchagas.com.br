@@ -1,0 +1,4 @@
+= render :layout => "layouts/panel", :locals => { :title => (defined?(title) ? title : configuration['description']) } do
+  %h2 New post
+
+  = render 'form'

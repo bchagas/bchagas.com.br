@@ -20,7 +20,7 @@ describe PostsController do
       it "should paginate the posts" do
         (Post::PER_PAGE + 1).times { Factory :published_post }
         get :index, :page => 2
-        assigns(:posts).size.should == 1
+        assigns(:posts).size.should == 5
       end
 
       it "should order post from newest to oldest" do
@@ -64,7 +64,7 @@ describe PostsController do
     it "should return all published posts with the specific tag paginated" do
       (Post::PER_PAGE + 1).times { Factory :published_post, :tag_list => 'tag'}
       get :by_tag, :tag => 'tag', :page => 2
-      assigns(:posts).size.should == 1
+      assigns(:posts).size.should == 5
     end
 
     it "should assign the tag to @tag" do

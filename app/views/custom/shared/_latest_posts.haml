@@ -1,0 +1,7 @@
+%h1= 'Últimos posts'
+%ul
+  - @posts.each do |post|
+    %li
+      %a{ :href => post_path(post) + "#article-#{post.id}"}
+        = post.title
+        %time{ :datetime => post.created_at }= I18n.l post.created_at, :format => :header

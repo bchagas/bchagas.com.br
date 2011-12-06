@@ -4,7 +4,12 @@ class Panel::PostsController < InheritedResources::Base
   cache_sweeper :post_sweeper
 
   def publish
-    resource.publish!
+    if resource.published?
+      redirect_to edit_panel_post_path(params[:id])
+    else
+      resource.publish!
+    end
+
   end
 
   def preview
