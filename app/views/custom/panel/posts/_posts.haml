@@ -1,0 +1,3 @@
+%ul#posts
+  - Post.all.each do |post|
+    %li= link_to post.title, edit_panel_post_path(post)
