@@ -110,7 +110,7 @@ GEM
     disqus (1.0.4)
       json
     erubis (2.7.0)
-    execjs (1.2.9)
+    execjs (1.2.11)
       multi_json (~> 1.0)
     factory_girl (2.3.2)
       activesupport
