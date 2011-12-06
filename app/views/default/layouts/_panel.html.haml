@@ -5,7 +5,7 @@
   %meta{ :name => "description", :content => configuration['description'] }
   %link{ :rel => "alternate", :type => "application/rss+xml", :title => rss_title, :href => rss_link}
   %title= "#{configuration['name']} - #{title}"
-  = raw stylesheet_link_merged 'panel', :media => 'screen'
+  = raw stylesheet_link_tag 'panel', :media => 'screen'
 
 - content_for :header do
   %h1= link_to configuration['name'], root_path

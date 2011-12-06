@@ -5,10 +5,10 @@
   %meta{ :name => "description", :content => defined?(description) ? description : configuration['description'] }
   %link{ :rel => "alternate", :type => "application/rss+xml", :title => rss_title, :href => rss_link}
   %title= "#{configuration['name']} - #{title}"
-  =raw stylesheet_link_merged 'screen', :media => 'screen, projection'
-  =raw stylesheet_link_merged 'print', :media => 'print'
+  =raw stylesheet_link_tag 'screen', :media => 'screen, projection'
+  =raw stylesheet_link_tag 'print', :media => 'print'
   /[if lt IE 8]
-    =raw stylesheet_link_merged 'ie', :media => 'screen, projection'
+    =raw stylesheet_link_tag 'ie', :media => 'screen, projection'
 
 
 - content_for :header do
