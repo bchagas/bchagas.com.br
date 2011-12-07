@@ -4,9 +4,11 @@ tmp
 db/*.sqlite3
 coverage
 solr
+Gemfile.lock
 public/cache
 public/system
 public/stylesheets
+public/assets
 public/javascripts/*_packaged.js
 public/javascripts/all.js
 doc/specs.html
