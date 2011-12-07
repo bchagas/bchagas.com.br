@@ -1,3 +1,6 @@
+- content_for :section do
+  = stylesheet_link_tag 'section/screen'
+
 = render :layout => "layouts/public", :locals => { :title => (defined?(title) ? title : configuration['description']) } do
   %ol#posts
     - @posts.each do |post|

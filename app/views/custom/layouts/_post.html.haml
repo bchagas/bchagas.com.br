@@ -7,7 +7,8 @@
 
   %title= "#{configuration['name']} - #{title}"
   %link{ :href => 'http://fonts.googleapis.com/css?family=Signika+Negative:600,300,400', :rel => 'stylesheet', :type => 'text/css' }
-  =raw stylesheet_link_tag 'application', :media => 'screen'
+  = raw stylesheet_link_tag 'application', :media => 'screen'
+  = yield :section
 
 - content_for :header do
   %h1= link_to configuration['name'], root_path

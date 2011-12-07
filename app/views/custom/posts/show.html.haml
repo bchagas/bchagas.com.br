@@ -1,4 +1,5 @@
-- content_for :head do
+- content_for :section do
+  = stylesheet_link_tag 'section/screen'
   = stylesheet_link_tag 'section/post'
 
 = render :layout => "layouts/post", :locals => {:title => @post.title, :description => @post.title } do

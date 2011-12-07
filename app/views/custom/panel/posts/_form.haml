@@ -1,8 +1,8 @@
-- content_for :js do
-  = raw javascript_include_tag :panel
-
 - content_for :head do
-  = raw stylesheet_link_tag :panel
+  = raw stylesheet_link_tag 'section/panel'
+  = raw stylesheet_link_tag 'section/markdown_style'
+  = raw stylesheet_link_tag 'section/syntax_highlight'
+  = raw stylesheet_link_tag 'section/markitup_style'
 
 = semantic_form_for [:panel, @post] do |form|
   = form.inputs do
