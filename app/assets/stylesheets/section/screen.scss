@@ -34,6 +34,36 @@ body {
   }
 
   aside {
+    form {
+      margin-bottom: 15px;
+      position: relative;
+
+      input[type='text'] {
+        border: 1px solid #CCC;
+        padding: 5px 10px;
+        color: #333;
+        width: 140px;
+        padding-right: 60px;
+
+        &:focus {
+          background: #FAFAFA;
+          outline: none;
+        }
+      }
+
+      input[type='submit'] {
+        background: #404040;
+        color: #FFF;
+        font-weight: bold;
+        border: none;
+        padding: 6px 10px;
+        cursor: pointer;
+        position: absolute;
+        left: 162px;
+        top: 0;
+      }
+    }
+        
     @include column(6);
     margin-right: 0;
 
@@ -43,7 +73,7 @@ body {
     }
 
     nav {
-      width: 185px;
+      width: 156px;
       margin: 5px auto;
 
       ul {

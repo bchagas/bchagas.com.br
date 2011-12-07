@@ -5,4 +5,13 @@
     $('time').html(day + month);
   };
 
+  $('aside img').hover(
+    function(){
+      $(this).after('<span>Hide phot</span>');
+    },
+    function() {
+      $(this).next('span').remove();
+    }
+  );
+
 }).call(this);
