@@ -16,6 +16,7 @@ doc/features.html
 tags
 *.swp
 *.swo
+.sass-cache/
 rerun.txt
 .bundle
 db/schema.rb
