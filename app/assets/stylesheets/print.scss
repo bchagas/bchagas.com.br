@@ -7,4 +7,4 @@
 body.bp {
   @include blueprint-print(true); }
 
-@import "syntax_highlight";
+@import "section/syntax_highlight";
