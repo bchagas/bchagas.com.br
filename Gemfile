@@ -11,7 +11,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
+gem 'therubyracer'
 gem 'json_pure', '>=1.4.6'
 gem 'haml', '3.1.3'
 gem 'haml-rails', '>= 0.3.4'
