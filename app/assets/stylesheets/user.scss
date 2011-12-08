@@ -11,10 +11,12 @@ body{
   }
   #container > section{
     @include column($blueprint-grid-columns, true);
-    margin: 20% 0;
+    margin: 20% auto;
+    float: none;
+    display: block;
 
     h2{
-      margin: 0 85px;
+      margin: 0 145px;
       font-size: 18px;
       font-style: italic;
     }
@@ -29,12 +31,12 @@ body{
     form{
       border: 1px solid #ccc;
       margin: 0 auto;
-      width: 800px;
+      width: 690px;
       background: #FFF;
       @include border-radius(10px);
       @include clearfix;
       fieldset{
-        width: 680px;
+        width: 550px;
         margin: 0;
         padding: 20px 0 20px 20px;
         float: left;
@@ -47,13 +49,20 @@ body{
           li{
             width: auto;
             padding: 25px 0 0;
+            input[type='submit'] {
+              @include background-image(linear-gradient(#FAFAFA, #CCC));
+              @include border-radius(5px);
+              border: none;
+              border: 1px solid #CCC;
+              padding: 2px 20px;
+            }
           }
         }
         ol{
           @include clearfix;
           li{
             float: left;
-            width: 340px;
+            width: 274px;
             &.rememberme{
               input, label{
                 display: inline;
@@ -80,8 +89,16 @@ body{
       }
     }
     .links{
-      margin: 0 75px;
+      margin: 0 138px;
       float: right;
+      a {
+        color: blue;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
 }
