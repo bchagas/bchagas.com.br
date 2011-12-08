@@ -1,3 +1,6 @@
+- content_for :head do
+  = stylesheet_link_tag 'section/panel'
+
 = render :layout => "layouts/panel", :locals => {:title => @post.title, :description => @post.title } do
   %article{:id => "article-#{@post.id}", :class => "post", :role => "main"}
     %header
